@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <link rel="icon" href="images/favicon.png" type="image/gif" />
+  <title> GEng 138 Project </title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet"/>
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet"/>
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <style>
+    #myMap {
+      width: 100%;
+      height: 300px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  
+  <!-- header section start -->
+
+  <header class="header_section">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+        <a href="index.html" class="navbar-brand">
+          <span>GEng 138 - Remote Sensing</span>
+        </a>
+        <div class="" id="">
+          <div class="custom_menu-btn">
+            <button onclick="openNav()">
+            <span class="s-1"></span>
+            <span class="s-2"></span>
+            <span class="s-3"></span>
+          </button>
+          <div class="overlay" id="myNav">
+            <div class="overlay-content">
+              <a href="index.html">Home</a>
+              <a href="testimonial.html">Through Decades</a>
+              <a href="about.html">3D Viewing</a>
+              <a href="members.html">Members</a>
+              
+            </div>
+          </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- End of header section -->
+
+  <!-- slider section -->
+  <section class="slider_section position-relative">
+    <div class="slider_bg_box">
+      <img src="images/vsu.jpg" alt="">
+    </div>
+    <div class="slider_bg"></div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6 text-center mt-0">
+          <div class="detail-box">
+           <h1>Evolving Landscape: <br> Infrastructure Shift Trough Five Decades</h1>
+            
+         </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of slider section -->
+
+  <!-- Special section -->
+  <section class="spcl_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail_container">
+            <div class="detail-box">
+              <img src="images/s1.png" alt="">
+              <h5>Main Objective</h5>
+              <p>To trace and showcase the transformation of the campus’ infrastructure from 1985 to 2025, highlighting key developments and the factors that influenced physical growth and modernization.
+              </p>
+            </div>
+            <div class="detail-box">
+              <img src="images/s2.png" alt="">
+              <h5>Scope</h5>
+              <p>This project focuses on the physical changes within the campus, specifically the construction, renovation, and expansion of buildings and facilities over four decades. 
+              </p>
+            </div>
+            <div class="detail-box">
+              <img src="images/s3.png" alt="">
+              <h5>Significance</h5>
+              <p>This project offers a deeper understanding of how the campus has grown to meet the evolving needs of its community. It helps preserve institutional memory, supports future planning, and strengthens appreciation for the school's journey and progress.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-5 ml-auto">
+          <div class="img-box">
+            <img src="images/bsu.png" alt="">
+          </div> </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of special section -->
+
+  <!-- Decades section -->
+  <section class="client_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>VSU THOUGH FIVE DECADES</h2>
+      </div>
+      <div class="carousel slide" id="carouselExampleControls" data-ride:="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/k1.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <h4>1985</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit nulla nemo voluptates nisi voluptatibus ullam similique tempore sapiente sint autem ratione ex nihil cupiditate exercitationem, quo, ipsa modi? Autem, veniam!
+                
+                </p>
+                <a href="1985.html">Explore More</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/k2.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <h4>1995</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit nulla nemo voluptates nisi voluptatibus ullam similique tempore sapiente sint autem ratione ex nihil cupiditate exercitationem, quo, ipsa modi? Autem, veniam!
+
+                </p>
+                <a href="1995.html">Explore More</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/k3.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <h4>2005</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit nulla nemo voluptates nisi voluptatibus ullam similique tempore sapiente sint autem ratione ex nihil cupiditate exercitationem, quo, ipsa modi? Autem, veniam!
+
+                </p>
+                <a href="">Explore More</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/k4.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <h4>2015</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit nulla nemo voluptates nisi voluptatibus ullam similique tempore sapiente sint autem ratione ex nihil cupiditate exercitationem, quo, ipsa modi? Autem, veniam!
+
+                </p>
+                <a href="">Explore More</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/k5.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <h4>2025</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit nulla nemo voluptates nisi voluptatibus ullam similique tempore sapiente sint autem ratione ex nihil cupiditate exercitationem, quo, ipsa modi? Autem, veniam!
+
+                </p>
+                <a href="">Explore More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel_btn-box">
+          <a href="#carouselExampleControls" class="carousel-control-prev" role="button" data-slide="prev">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a href="#carouselExampleControls" class="carousel-control-next" role="button" data-slide="next">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of client section -->
+
+  <!-- about section -->
+  <section class="about_section layout_padding-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="images/3dImage.png" alt="">
+            
+
+          </div>
+        </div>
+        <div class="col-md-6"><div class="detail-box">
+          <div class="heading_container">
+            <h2>3-Dimensional</h2>
+          </div>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam cum consequuntur aliquid, asperiores accusamus, rem explicabo perferendis, dolor repellat numquam adipisci esse. Nobis quisquam, recusandae iusto perferendis porro libero vel.
+
+          </p>
+          <a href="https://sketchfab.com/3d-models/first-5f91d068707f45c18d1fa27597c6a003?fbclid=IwZXh0bgNhZW0CMTEAAR59PbIfmD7FyJ95xnRB4sLzv__VARawDt2yC4oQXjVJj6E3k2B-uxUPsg3z-g_aem_1WOKVM4A2Fyatjk4s4Phhg" target="_blank">View 3D</a>
+        </div></div>
+      </div>
+    </div>
+  </section>
+<!-- End of about us page -->
+
+<!-- contact section 
+<section class="contact_section layout_padding">
+  <div class="contact_bg_box">
+    <img src="images/contact-bg.jpg" alt="">
+  </div>
+  <div class="container">
+    <div class="heading_container heading_center">
+      <h2>Book A Table</h2>
+    </div> 
+    <div class="">
+      <div class="row">
+        <div class="col-md-7 mx-auto">
+          <form action="">
+            <div class="contact_form-container">
+              <div class="row">
+                <div class="col-sm-6">
+                  <input type="text" placeholder="Full Name">
+                </div>
+                <div class="col-sm-6">
+                  <input type="text" placeholder="Email">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <input type="number" placeholder="Phone Number" />
+                </div>
+                <div class="col-sm-6">
+                  <input type="number" placeholder="Number of People" />
+                </div> 
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <input type="date" placeholder="Select date" />
+                </div>
+                <div class="col-sm-6">
+                  <input type="time" placeholder="Select Time" />
+                </div>
+              </div>
+              <div class="">
+                <input type="text" placeholder="Additional Note" class="message_input" />
+              </div>
+              <div class="btn_box">
+                <button type="submit">Send</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ End of contact section -->
+
+<!-- Members section -->
+<section class="member_section layout_padding">
+  <div class="container">
+    <div class="heading_container heading_center">
+      <h2>MEMBERS</h2>
+    </div>
+    <div class="carousel slide" id="carouselExampleControls1" data-ride:="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/p1.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>ROMNICK MALULAN</h4>
+              <p>LEADER 1
+              </p>
+              <a href="https://www.facebook.com/romnick.malulan" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>acebook</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/p2.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>RHEA JANE TOBES</h4>
+              <p>LEADER 2
+              </p>
+              <a href="https://www.facebook.com/twobeess" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>acebook</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/p3.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>ABIGAIL GRANTUZA</h4>
+              <p>MEMBER 1
+              </p>
+              <a href="https://www.facebook.com/abi.grantuza" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>acebook</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/me.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>DEAH DELMONTE</h4>
+              <p>MEMBER 2
+              </p>
+              <a href="https://www.facebook.com/deah.delmontewp" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>acebook</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/p4.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>EMMANUEL JOSE DIEZ</h4>
+              <p>MEMBER 3
+              </p>
+              <a href="https://www.facebook.com/Emmannn8" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>acebook</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/p5.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>JACKIELYN VELEZ</h4>
+              <p>MEMBER 4
+              </p>
+              <a href="https://www.facebook.com/jacky.velez.2024" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>acebook</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/p6.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>JADE EDWARD ORONGAN</h4>
+              <p>MEMBER 5
+              </p>
+              <a href="https://www.facebook.com/profile.php?id=61555634467164" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>acebook</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/p7.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>KIMBERLY ANNE BATICAN</h4>
+              <p>MEMBER 6
+              </p>
+              <a href="https://www.facebook.com/kimberlyannbatican.11" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>acebook</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/p9.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>PRINCESS NINA GONZALES</h4>
+              <p>MEMBER 7
+              </p>
+              <a href="https://www.facebook.com/princess.nina.r.gonzales" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>acebook</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/p8.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>RUSSELL RABAGO</h4>
+              <p>MEMBER 8
+              </p>
+              <a href="https://www.facebook.com/rssllrabago" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>acebook</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel_btn-box">
+        <a href="#carouselExampleControls1" class="carousel-control-prev" role="button" data-slide="prev">
+          <i class="fa fa-angle-left" aria-hidden="true"></i>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a href="#carouselExampleControls1" class="carousel-control-next" role="button" data-slide="next">
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end of client section -->
+
+  <!-- start of footer -->
+  <footer class="footer_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-col">
+          <div class="footer_content">
+            <h4>Reach at...</h4>
+            <div class="contact_link_box">
+              <a href=""><i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>Location</span></a>
+              <a href="tel:+639095244787"><i class="fa fa-phone" aria-hidden="true"></i>
+              <span>Call +63 9095244787</span></a>
+              <a href="deah.delmonte24@gmail.com"><i class="fa fa-envelop" aria-hidden="true"></i>
+              <span>deah.delmonte24@gmail.com</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <div class="footer_detail">
+            <a href="" class="footer-logo">
+              GEng 138
+            </a>
+            <p>Group Wapakels. Eme lang...
+            </p>
+            <div class="footer_social">
+              <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <div class="map_container">
+            <div class="map">
+              <div id="myMap"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="footer-info">
+        <p>&copy; <span id="displayYear"></span>All Rights Reserved By
+        <a href="#">WAPAKELS</a></p>
+      </div>
+    </div>
+  </footer>
+  <!-- end of footer section -->
+
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+  <!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<!-- Map Script -->
+<script>
+  var map = L.map('myMap').setView([10.7444, 124.7922], 17); // You can change the coordinates
+
+  // Add a basic street map
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap contributors'
+  }).addTo(map);
+
+  // Add a clickable marker
+  L.marker([10.7444, 124.7922]).addTo(map)
+    .bindPopup('<b>This is VSU!</b><br>Click for more info.')
+    .openPopup();
+</script>
+
+
+</body>
+
+</html>

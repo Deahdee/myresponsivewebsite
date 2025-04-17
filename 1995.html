@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Floating Spot Map</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <style>
+    #map {
+      width: 100%;
+      height: 600px;
+      background: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Satellite Image Spot Map</h2>
+<div id="map"></div>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script>
+  // 1. Define image dimensions in pixels (example: 2000x1500 px)
+  var imageWidth = 2000;
+  var imageHeight = 1500;
+
+  // 2. Create the map with custom CRS (no geo projection)
+  var map = L.map('map', {
+    crs: L.CRS.Simple,
+    minZoom: -1
+  });
+
+  // 3. Define image bounds
+  var bounds = [[0,0], [imageHeight, imageWidth]];
+
+  // 4. Add your satellite image
+  var image = L.imageOverlay('your-satellite-image.jpg', bounds).addTo(map);
+  map.fitBounds(bounds);
+
+  // 5. Add a clickable marker on top of a building (custom coords)
+  var marker = L.marker([700, 1100]).addTo(map);
+  marker.bindPopup("<b>Building A</b><br>Details about this building.");
+
+  // You can add more markers as needed with different coords
+</script>
+
+</body>
+</html>
+

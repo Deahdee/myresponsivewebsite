@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <link rel="icon" href="images/favicon.png" type="image/gif" />
+  <title> GEng 138 Project </title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet"/>
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet"/>
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <style>
+    #myMap {
+      width: 100%;
+      height: 300px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  
+  <!-- header section start -->
+
+  <header class="header_section">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+        <a href="index.html" class="navbar-brand">
+          <span>GEng 138 - Remote Sensing</span>
+        </a>
+        <div class="" id="">
+          <div class="custom_menu-btn">
+            <button onclick="openNav()">
+            <span class="s-1"></span>
+            <span class="s-2"></span>
+            <span class="s-3"></span>
+          </button>
+          <div class="overlay" id="myNav">
+            <div class="overlay-content">
+              <a href="index.html">Home</a>
+              <a href="testimonial.html">Through Decades</a>
+              <a href="about.html">3D Viewing</a>
+              <a href="members.html">Members</a>
+            </div>
+          </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- End of header section -->
+
+  <!-- Members section -->
+<section class="member_section layout_padding">
+  <div class="container">
+    <div class="heading_container heading_center">
+      <h2>MEMBERS</h2>
+    </div>
+    <div class="carousel slide" id="carouselExampleControls1" data-ride:="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/p1.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>ROMNICK MALULAN</h4>
+              <p>LEADER 1
+              </p>
+              <a href="https://www.facebook.com/romnick.malulan" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>acebook</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/p2.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>RHEA JANE TOBES</h4>
+              <p>LEADER 2
+              </p>
+              <a href="https://www.facebook.com/twobeess" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>acebook</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/p3.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>ABIGAIL GRANTUZA</h4>
+              <p>MEMBER 1
+              </p>
+              <a href="https://www.facebook.com/abi.grantuza" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>acebook</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/me.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>DEAH DELMONTE</h4>
+              <p>MEMBER 2
+              </p>
+              <a href="https://www.facebook.com/deah.delmontewp" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>acebook</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/p4.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>EMMANUEL JOSE DIEZ</h4>
+              <p>MEMBER 3
+              </p>
+              <a href="https://www.facebook.com/Emmannn8" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>acebook</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/p5.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>JACKIELYN VELEZ</h4>
+              <p>MEMBER 4
+              </p>
+              <a href="https://www.facebook.com/jacky.velez.2024" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>acebook</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/p6.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>JADE EDWARD ORONGAN</h4>
+              <p>MEMBER 5
+              </p>
+              <a href="https://www.facebook.com/profile.php?id=61555634467164" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>acebook</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/p7.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>KIMBERLY ANNE BATICAN</h4>
+              <p>MEMBER 6
+              </p>
+              <a href="https://www.facebook.com/kimberlyannbatican.11" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>acebook</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/p9.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>PRINCESS NINA GONZALES</h4>
+              <p>MEMBER 7
+              </p>
+              <a href="https://www.facebook.com/princess.nina.r.gonzales" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>acebook</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/p8.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>RUSSELL RABAGO</h4>
+              <p>MEMBER 8
+              </p>
+              <a href="https://www.facebook.com/rssllrabago" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>acebook</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel_btn-box">
+        <a href="#carouselExampleControls1" class="carousel-control-prev" role="button" data-slide="prev">
+          <i class="fa fa-angle-left" aria-hidden="true"></i>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a href="#carouselExampleControls1" class="carousel-control-next" role="button" data-slide="next">
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end of client section -->
+
+
+  <!-- start of footer -->
+  <footer class="footer_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-col">
+          <div class="footer_content">
+            <h4>Reach at...</h4>
+            <div class="contact_link_box">
+              <a href=""><i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>Location</span></a>
+              <a href="tel:+639095244787"><i class="fa fa-phone" aria-hidden="true"></i>
+              <span>Call +63 9095244787</span></a>
+              <a href="deah.delmonte24@gmail.com"><i class="fa fa-envelop" aria-hidden="true"></i>
+              <span>deah.delmonte24@gmail.com</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <div class="footer_detail">
+            <a href="" class="footer-logo">
+              GEng 138
+            </a>
+            <p>Group Wapakels. Eme lang...
+            </p>
+            <div class="footer_social">
+              <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <div class="map_container">
+            <div class="map">
+              <div id="myMap"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="footer-info">
+        <p>&copy; <span id="displayYear"></span>All Rights Reserved By
+        <a href="#">WAPAKELS</a></p>
+      </div>
+    </div>
+  </footer>
+  <!-- end of footer section -->
+
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+  <!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<!-- Map Script -->
+<script>
+  var map = L.map('myMap').setView([10.7444, 124.7922], 17); // You can change the coordinates
+
+  // Add a basic street map
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap contributors'
+  }).addTo(map);
+
+  // Add a clickable marker
+  L.marker([10.7444, 124.7922]).addTo(map)
+    .bindPopup('<b>This is VSU!</b><br>Click for more info.')
+    .openPopup();
+</script>
+
+
+</body>
+
+</html>
